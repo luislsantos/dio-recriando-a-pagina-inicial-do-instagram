@@ -12,14 +12,14 @@ body {
     /* width: 100%; */
     height: 100vh;
     display: flex; 
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    /* flex-direction: column; added to test footer */
+    flex-direction: column; /*added to test footer*/
     /* border: 1px solid red; */
 }
 
 form {
-    width: 80%;
+    width: 268px;
 }
 
 .instagram-wrapper {
@@ -78,15 +78,12 @@ form {
 
 .login-form input {
     width: 100%;
-    height: 30px;
+    height: 38px;
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
+    border-radius: 3px;
     font-size: 11px;
     padding: 10px;
-}
-
-.login-form input::placeholder {
-    opacity: 0.7;
 }
 
 .login-btn {
@@ -192,7 +189,53 @@ footer a{
     color: #9b9b9b;
 } */
 
-/* mobile */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 105px;
+    width: 100%;
+    color: #918e8e;
+    margin-bottom: 52px;
+}
+
+.footer footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;    
+}
+
+.assorted-links-1, .assorted-links-2 {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.assorted-links-1 a, .assorted-links-2 a {    
+    font-size: 12px;
+    color: #918e8e;
+    padding: 3px 9px;
+}
+
+.language {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.language p {
+    padding: 0 10px;
+}
+
+/* Tablet */
 
 @media (max-width: 875px) {
 
@@ -210,6 +253,8 @@ footer a{
     }
 }
 
+/* Mobile */
+
 @media (max-width:450px) {
 
     body {
@@ -218,7 +263,10 @@ footer a{
 
     .instagram-wrapper {
         width: 90%;
-        justify-content: center;
+        height: 647px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
     }
 
     .instagram-phones {
@@ -226,10 +274,15 @@ footer a{
     }
 
     .instagram-interact {
+        justify-content: start;
         width: 350px;
     }
 
     .instagram-account {
         border: none;
+    }
+
+    .login-form input {
+        background-color: transparent;
     }
 }
