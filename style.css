@@ -37,13 +37,28 @@ form {
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding-right: 40px;
     /* border: 1px solid black; */
 }
 
 .instagram-phones img{
-    /* height: 700px; */
-    height: 50rem;
+    height: 590px;
+    /* height: 50rem; */
     /* border: 1px solid red; */
+}
+
+.instagram-phones-screenshots {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.instagram-phones-screenshots img {
+    height: 500px;
+    margin-left: 92px;
+    margin-bottom: 40px;
 }
 
 .instagram-interact {
@@ -115,7 +130,11 @@ form {
     width: 36%;
     margin: 15px;
     border-color: #dbdbdb;
-    opacity: 0.7;
+    opacity: 0.4;
+}
+
+.separador span {    
+    font-size: 13px;
 }
 
 .instagram-facebook {
